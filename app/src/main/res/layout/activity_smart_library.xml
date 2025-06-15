@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".SmartLibraryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:spacing="12dp">
+
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter document title"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <EditText
+            android:id="@+id/contentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint="Enter document content"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <Button
+            android:id="@+id/predictButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Predict Category"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Category"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            android:useDefaultMargins="true">
+
+            <Button
+                android:id="@+id/btnWorld"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="World"/>
+
+            <Button
+                android:id="@+id/btnSports"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Sports"/>
+
+            <Button
+                android:id="@+id/btnBusiness"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Business"/>
+
+            <Button
+                android:id="@+id/btnSciTech"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Sci/Tech"/>
+
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/predictionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EEEEEE"
+            android:padding="12dp"
+            android:text="Prediction will appear here."
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Document"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/analysisButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explain"
+            android:backgroundTint="#9C27B0"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</ScrollView>

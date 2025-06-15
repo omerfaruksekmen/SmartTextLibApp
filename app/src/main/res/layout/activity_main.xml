@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SmartTextLib - Classify and Analyze"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#2C3E50"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_marginBottom="32dp" />
+
+    <ImageView
+        android:id="@+id/welcomeImage"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@drawable/image"
+        android:contentDescription="Welcome Image"
+        android:layout_marginBottom="32dp"
+        android:scaleType="centerInside" />
+
+    <Button
+        android:id="@+id/btnSmartLibrary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Library Categorizer"
+        android:backgroundTint="#3F51B5"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"  />
+
+</LinearLayout>
