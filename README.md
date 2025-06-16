@@ -95,7 +95,7 @@
 - AG News Dataset
 - Explainable AI (XAI)
 
-## How To Run 🚀
+## 🚀 How To Run 
 
 1. 📱 Requirements
 - Android device (Android 8.0 or higher recommended)
@@ -108,7 +108,7 @@
 - Tap "Explain" to explore the NLP pipeline and explanation for the prediction.
 - Use "Educational Mode" to view step-by-step processing like tokenization, TF-IDF, top keywords, and prediction confidence.
 3. 🎯 Categories
-The app classifies news into the following four categories:
+- The app classifies news into the following four categories:
 - World
 - Sports
 - Business
